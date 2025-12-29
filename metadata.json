@@ -1,0 +1,7 @@
+{
+  "name": "Abdullahi - Portfolio",
+  "description": "A high-performance, 3D animated developer portfolio for Abdullahi Muse Isse, featuring a Gemini-powered AI assistant, glassmorphic design, and smooth scroll animations.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
