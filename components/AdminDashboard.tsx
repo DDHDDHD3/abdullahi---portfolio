@@ -867,7 +867,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ isDark, onExit }
     };
 
     return (
-        <div className={`min-h-screen ${isDark ? 'bg-[#020617] text-white' : 'bg-slate-50 text-slate-900'} flex selection:bg-blue-500/30 relative overflow-x-hidden`}>
+        <div className={`h-screen ${isDark ? 'bg-[#020617] text-white' : 'bg-slate-50 text-slate-900'} flex selection:bg-blue-500/30 relative overflow-hidden`}>
             {/* Mobile Sidebar Overlay */}
             <AnimatePresence>
                 {isSidebarOpen && (
@@ -925,7 +925,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ isDark, onExit }
                 </div>
             </aside>
 
-            <main className="flex-1 p-4 md:p-8 lg:p-14 overflow-y-auto w-full max-w-[100vw]">
+            <main className="flex-1 p-4 md:p-8 lg:p-14 overflow-y-auto overflow-x-hidden w-full max-w-[100vw]" style={{ WebkitOverflowScrolling: 'touch' }}>
                 <header className="flex flex-col md:flex-row md:items-center justify-between mb-8 md:mb-12 gap-6">
                     <div className="flex items-center gap-4">
                         <button
